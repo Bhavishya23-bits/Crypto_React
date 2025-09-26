@@ -12,9 +12,9 @@ function App(){
       <Navbar />
       <Routes>
         <Route path='/Crypto_React/' element={<Home />} />
-        <Route path="/Crypto_React/blog" element={<Blog />} />
-        <Route path='/Crypto_React/:coinId' element={<Coin />} />
-        <Route path="/Crypto_React/wishlist" element={<Wishlist />} />
+        <Route path="/Crypto_React/blog/" element={<Blog />} />
+        <Route path='/Crypto_React/:coinId/' element={<Coin />} />
+        <Route path="/Crypto_React/wishlist/" element={<Wishlist />} />
       </Routes>
       <Footer></Footer>
     </div>
