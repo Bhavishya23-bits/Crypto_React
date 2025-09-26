@@ -60,9 +60,9 @@ const toggleMenu = () => setMenuOpen(!menuOpen);
           className='logo menu-logo'
           onClick={toggleMenu}
         />
-        <Link to="/" onClick={toggleMenu}><li># Home</li></Link>
-        <Link to="/wishlist" onClick={toggleMenu}><li># My Wishlist</li></Link>
-        <Link to="/blog" onClick={toggleMenu}><li># Blog</li></Link>
+        <Link to="/Crypto_React/" onClick={toggleMenu}><li># Home</li></Link>
+        <Link to="/Crypto_React/wishlist" onClick={toggleMenu}><li># My Wishlist</li></Link>
+        <Link to="/Crypto_React/blog" onClick={toggleMenu}><li># Blog</li></Link>
         </div>
         <div className="navbar_right">
             <select onChange={currency_change}>
