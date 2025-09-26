@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.App{
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(#0b004e,#1d152f,#002834);
+}
+body.light-mode .App {
+  background-image: linear-gradient(to bottom right,#d0e1f9,#c2d4dd);
+  background-size: 200% 200%;
+  animation: glow-fade 10s ease infinite;
+  color: #333;
+}
+@keyframes glow-fade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+body.light-mode select {
+  background-color:  #7927ff;
+  border: none;
+}
+
+body.light-mode .mobile-menu {
+  background: linear-gradient(to bottom, #c2d4dd, #d0e1f9);
+  color: #333;
+}
+
+body.light-mode .mobile-menu li,
+body.light-mode .mobile-menu a {
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .mobile-menu li:hover,
+body.light-mode .mobile-menu a:hover {
+  color: #7927ff;
+}
+body.light-mode #mode-toggle {
+  background-color: #7927ff;
+  border: none;
+}
+body.light-mode .word{
+  color:#7927ff;
+}
+
+body.light-mode .crypto_table {
+  background: white;
+}
+
+body.light-mode .table_layout {
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body.light-mode .table_layout p {
+  color: #333;
+}
+
+body.light-mode .blog-post{
+  background-color: white;
+}
+
+body.light-mode .blog h1{
+  color:#7927ff;
+}
+body.light-mode .blog-post {
+ border-left: 4px solid #7927ff;
+}
+body.light-mode .blog-post p, li {
+  color:#333;
+}
+body.light-mode .blog-post h2 {
+  color:#333;
+}
+
+body.light-mode .green {
+  color: green !important;
+}
+
+body.light-mode .red {
+  color: red !important; 
+}
+body.light-mode .hii li{
+  color:#333 ;
+}
+body.light-mode .wishlist-crypto-table {
+  background: white;
+  border-radius: 8px;
+}
+
+body.light-mode .wishlist-table-layout {
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body.light-mode .wishlist-table-layout p {
+  color: #333;
+}
+
+body.light-mode .wishlist-red {
+  color: red !important;
+}
+
+body.light-mode .wishlist-green {
+  color: green !important;
+}

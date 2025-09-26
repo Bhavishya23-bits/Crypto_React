@@ -1,0 +1,152 @@
+.spinner{
+    display:grid;
+    place-self: center;
+    min-height: 80vh;
+}
+
+.spin{
+    width:65px;
+    height:65px;
+    border: 5px solid #bdbdbd;
+    border-top-color: #4500c6;
+    border-radius: 50%;
+    place-self: center;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.coin{
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.coin_name{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 25px auto;
+    margin-bottom: 25px;
+}
+
+.coin_name img{
+    max-width:100px;
+}
+
+.coin_name p b{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.adjust{
+    display: flex;
+    padding: 10px 50px 10px 50px ;
+    justify-content: space-between;
+}
+
+.coin_chart {
+  width: 42vw;
+  height: 24vw;
+  margin: 0 0 80px 0;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.coin_info{
+    width: 42vw;
+    height: 24vw;
+    justify-content:space-around;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #3366CC;
+}
+
+.coin_info ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 2px solid grey;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.coin_info ul li:last-child{
+    font-weight: 500;
+}
+
+@media (max-width: 1475px) {
+.adjust{
+    flex-direction: column; 
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+}
+  .coin_chart,
+  .coin_info {
+    width: 100%;
+    height: auto;
+  }
+
+  .adjust {
+    padding: 10px 25px;
+    gap: 0.5vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
+@media (max-width: 1475px) {
+.adjust{
+    flex-direction: column; 
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+}
+  .coin_chart,
+  .coin_info {
+    width: 100%;
+    height: auto;
+  }
+
+  .adjust {
+    padding: 10px 25px;
+    gap: 0.5vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .adjust {
+    flex-direction: column; 
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+  }
+
+  .coin_chart,
+  .coin_info {
+    height: 40vh;
+    width: 95vw;
+    box-sizing: border-box;
+    overflow-x:visible;
+  }
+}
