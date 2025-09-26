@@ -34,12 +34,13 @@
 }
 
 .navbar select {
-    padding: 5px 8px;
+    padding: 10px 10px;
     border-radius: 50px;
     border: 2px solid white;
     background: transparent;
     color: white;
     cursor: pointer;
+    width: 80px;
 }
 
 .navbar option{
@@ -47,23 +48,6 @@
     color:white;
 }
 
-.navbar button {
-  display: flex;
-  align-items: center;
-  padding: 4px 10px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background: black;
-  cursor: pointer;
-}
-
-
-.navbar button img {
-  width: 13px;
-  height: 13px;
-  object-fit: contain;
-  display: block;
-}
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -117,8 +101,24 @@
     width:13px;
 }
 
+#mode-toggle {
+  padding: 6px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
 
 #mode-toggle svg {
+  width: 22px;
+  height: 22px;
   fill: white;
   transition: transform 0.2s ease;
 }
@@ -126,7 +126,6 @@
 #mode-toggle:hover svg {
   transform: scale(1.1) rotate(10deg);
 }
-
 
 @media(max-width:900px){
     .navbar{
@@ -167,4 +166,21 @@
     .navbar img{
         width:12px;
     }
+    #mode-toggle {
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    border-width: 3px;
+    background-color: #222;
+  }
+
+  #mode-toggle svg {
+    width: 22px;
+    height: 22px;
+    align-items: center;
+  }
+
+  #mode-toggle:hover {
+    background-color: #000000;
+  }
 }

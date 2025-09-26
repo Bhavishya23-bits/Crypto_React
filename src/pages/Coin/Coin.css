@@ -141,12 +141,13 @@
     display: flex;
     align-items: center; 
   }
-
+.coin_chart > * {
+  min-width: 600px;
+}
   .coin_chart,
   .coin_info {
-    height: 40vh;
+    height: 43vh;
     width: 95vw;
-    box-sizing: border-box;
-    overflow-x:visible;
+    overflow-x: auto;
   }
 }
