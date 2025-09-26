@@ -102,7 +102,7 @@ const Home = () => {
         </div>
         {
           display_coin.map((item, index) => (
-            <Link to={`/Crypto_React/${item.id}`} className="table_layout" key={index}>
+            <Link to={`/Crypto_React/${item.id}/`} className="table_layout" key={index}>
               <p>{item.market_cap_rank}</p>
               <div>
                 <img src={item.image} alt={item.name} />
