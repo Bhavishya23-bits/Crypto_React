@@ -63,7 +63,7 @@ const Home = () => {
     <div className='home'>
       <div className="hero">
         <h1>Largest <br /> Crypto Marketplace</h1>
-        <p className='word'>Welcome to the world's largest cryptocurrency marketplace. Sign up to explore more about cryptos.</p>
+        <p className='word'>Welcome to the world's largest cryptocurrency marketplace. Click on the icon on the left to explore more.</p>
         <form onSubmit={submit_handler}>
           <input
             onChange={input_handler}
